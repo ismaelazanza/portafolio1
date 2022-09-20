@@ -1,0 +1,393 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 65rem;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2 , h3, h4, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/*CODIGO HEADER*/
+
+.header {
+        background-image: url(../images/bg-hero-desktop.svg);
+        background-color: hsl(193, 100%, 96%);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.contenedor-header {
+    margin: 0 auto;
+    max-width: 100rem;
+    padding-top: 4rem;
+}
+
+.logo-bnt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.logo-bnt a{
+    background-color: #fff;
+    display: inline-block;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 3.5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.caja-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+}
+
+        .caja-header .header-izquierda,
+        .caja-header .header-imagen-derecha{
+            width: 50%;
+        }
+
+.header-izquierda {
+    padding-right: 8rem;
+}
+
+        .header-izquierda h1{
+            margin-bottom: 1.5rem;
+        }
+
+        .header-izquierda p{
+            font-size: 1.4rem;
+        }
+
+        .header-izquierda a{
+            display: inline-block;
+            color: #fff;
+            background-color: hsl(322, 100%, 75%);
+            padding: 1rem 4rem;
+            border-radius: 3rem;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .header-izquierda a:hover{
+            background-color: hsl(322, 56%, 63%);
+        }
+
+    /* HEADER RESPONSIVO */
+
+                @media (max-width: 600px) {
+                    .caja-header{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        min-height: 70vh;
+                        justify-content: center;
+                        margin-top: 4rem;
+                    }
+                    .caja-header .header-izquierda,
+                    .caja-header .header-imagen-derecha{
+                        width: 100%;
+                        text-align: center;
+                        padding: 0;
+                        margin-bottom: 3rem;
+                    }
+                }              
+
+/*CODIGO MAIN*/
+
+.main {
+    margin: 15rem 0;
+}
+
+.contenedor-main {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.main-caja{
+    margin-top: 3rem;
+    display: flex;
+    min-height: 35vh;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 2rem;
+}
+
+        .main-caja-izquierda{
+            padding-right: 12rem;
+            width: 55%;
+        }
+        .main-caja-derecha{
+            width: 35%;
+        }
+
+        .main-caja-izquierda p{
+            color: hsl(208, 11%, 55%);
+            font-weight: 300;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        .main-caja-izquierda-central {
+            width: 35%;
+        }
+
+        .main-caja-derecha-central{
+            padding: 0 1rem 0 6rem;
+            width: 55%;
+        }
+
+        .main-caja-derecha-central p{
+            color: hsl(208, 11%, 55%);
+            font-weight: 300;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        /* MAIN RESPONSIVO */
+
+                @media (max-width: 600px) {
+                    .main-caja{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        min-height: auto;
+                    }
+
+                    .main img {
+                        padding-top: 4rem;
+                    }
+                    .main-caja-izquierda{
+                        width: 100%;
+                        padding: 3rem 5rem;
+                        text-align: center;
+                    }
+                    .main-caja-izquierda-central {
+                        width: 40%;
+                    }
+            
+                    .main-caja-derecha-central{
+                        padding: 3rem 5rem;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .flexbox-cont-central{
+                        display: flex;
+                        flex-direction:column;
+                    }
+                } 
+
+/*CODIGO ASIDE*/
+
+.aside{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto{
+    text-align: center;
+    max-width: 60rem;
+    background-color: #fff;
+    padding: 4rem 10rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 2rem;
+}
+
+        .contacto a{
+            display: inline-block;
+            background-color: hsl(322, 100%, 66%);
+            color: #fff;
+            padding: 1.5rem 4.5rem;
+            border-radius: 2rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .contacto a:hover{
+            background-color: hsl(322, 56%, 63%);
+        }
+
+    /* ASIDE RESPONSIVO */
+
+    @media (max-width: 600px) {
+            .contacto{
+                margin: 4rem 2rem 0 2rem;
+            }
+        }
+
+
+/*CODIGO FOOTER*/
+
+.footer{
+    background-color: #00252e;
+    margin-top: -5rem;
+    padding-top: 10rem;
+}
+
+.logo-footer img {
+    margin-bottom: 4rem;
+}
+
+.footer .logo-footer{
+    max-width: 100rem;
+}
+
+.contenedor-footer{
+    margin: 0 auto;
+    max-width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    gap: 1rem;
+}
+
+.contenedor-footer a{
+    color: #cbe6ef;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.contenedor-footer p{
+    color: #cbe6ef;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+    .contenedor-footer .footer-caja1 {
+        grid-column: 1 / 6;
+        margin-right: 5rem;
+    }
+
+    .contenedor-footer .footer-caja2{
+        grid-column: 6 / 8;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-footer .footer-caja3{
+        grid-column: 8 / 10;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-footer .footer-caja4{
+        grid-column: 10 / 13;
+    }
+
+    .contenedor-footer .wiget1-parra,
+    .contenedor-footer .widget2-fono,
+    .contenedor-footer .widget3-email {
+        margin-bottom: 2rem;
+        display: flex;
+    }
+            .wiget1-parra img,
+            .widget2-fono img,
+            .widget3-email img {
+                margin-right: 2rem;
+            }
+
+    .footer-caja2 a,
+    .footer-caja3 a {
+        margin-bottom: 2rem;
+    }
+
+            .footer-caja2 a:hover{
+                text-decoration-line: underline;
+            }
+            .footer-caja3 a:hover{
+                text-decoration-line: underline;
+            }
+
+
+    .footer-caja4 a{
+        margin-right: .5rem;
+        border-radius: 50%;
+        border: .1rem solid #cbe6ef;
+        padding: .4rem .6rem;
+    }
+
+                .footer-caja4 a:hover{
+                    color: hsl(322, 56%, 63%);
+                    border: .1rem solid hsl(322, 56%, 63%);
+                }
+
+    .footer-caja4 .fa-facebook-f{
+        padding: .4rem .3rem;
+    }
+
+    .footer-derechos {
+        text-align: right;
+    }
+
+    .footer-derechos p{
+        color: #cbe6ef;
+        padding-bottom: 5rem;
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER RESPONSIVO */
+
+    @media (max-width: 600px) {
+        .contenedor-footer{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-caja4,
+        .footer-derechos
+        {
+            text-align: center;
+        }
+      }
+
+/*RESPONSIVO GENERAL*/
+
+@media (max-width: 1014px) {
+    .contenedor-header,
+    .main,
+    .envolver-footer{
+        margin: 0 2rem;
+    }
+  }
